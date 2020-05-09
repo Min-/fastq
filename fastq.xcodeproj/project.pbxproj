@@ -34,6 +34,7 @@
 		3902FFF6246666D1000E8C7C /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFDA246666D1000E8C7C /* writer.cpp */; };
 		3902FFF7246666D1000E8C7C /* polyx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFDD246666D1000E8C7C /* polyx.cpp */; };
 		3902FFF924666E1F000E8C7C /* test_readfastq_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFF824666E1F000E8C7C /* test_readfastq_main.cpp */; };
+		3902FFFD246680F4000E8C7C /* test_read.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFFC246680F4000E8C7C /* test_read.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +120,7 @@
 		3902FFF824666E1F000E8C7C /* test_readfastq_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_readfastq_main.cpp; path = min_tests/test_readfastq_main.cpp; sourceTree = "<group>"; };
 		3902FFFA24666EBC000E8C7C /* R1.fq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = R1.fq; sourceTree = "<group>"; };
 		3902FFFB24666EBC000E8C7C /* R2.fq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = R2.fq; sourceTree = "<group>"; };
+		3902FFFC246680F4000E8C7C /* test_read.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_read.cpp; path = min_tests/test_read.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				3902FFAD246666D1000E8C7C /* processor.cpp */,
 				3902FFA3246666D1000E8C7C /* processor.h */,
 				3902FFA9246666D1000E8C7C /* read.cpp */,
+				3902FFFC246680F4000E8C7C /* test_read.cpp */,
 				3902FFD1246666D1000E8C7C /* read.h */,
 				3902FFA4246666D1000E8C7C /* seprocessor.cpp */,
 				3902FFA0246666D1000E8C7C /* seprocessor.h */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3902FFEF246666D1000E8C7C /* fastareader.cpp in Sources */,
+				3902FFFD246680F4000E8C7C /* test_read.cpp in Sources */,
 				3902FFE3246666D1000E8C7C /* writerthread.cpp in Sources */,
 				3902FFF2246666D1000E8C7C /* duplicate.cpp in Sources */,
 				3902FFF1246666D1000E8C7C /* filterresult.cpp in Sources */,

@@ -11,7 +11,7 @@
 #include "read.h"
 #include "fastqreader.h"
 
-int main(){
+int main__check_fastq(){
     std::string R1_path = "/Users/min/dev/fastq/fastq/R1.fq";
     FastqReader R1 = FastqReader(R1_path);
     
@@ -41,7 +41,7 @@ int main(){
         records ++;
         r->print();
         std::cout << "read: " << records << std::endl;
-        delete r;
+        delete r; // destroy the read right away
     }
 
     std::cout << seqlen << std::endl;
