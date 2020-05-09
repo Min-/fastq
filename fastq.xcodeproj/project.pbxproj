@@ -7,7 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3902FF92246664AD000E8C7C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FF91246664AD000E8C7C /* main.cpp */; };
+		3902FFDE246666D1000E8C7C /* peprocessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FF9C246666D1000E8C7C /* peprocessor.cpp */; };
+		3902FFDF246666D1000E8C7C /* jsonreporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FF9D246666D1000E8C7C /* jsonreporter.cpp */; };
+		3902FFE0246666D1000E8C7C /* threadconfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA1246666D1000E8C7C /* threadconfig.cpp */; };
+		3902FFE1246666D1000E8C7C /* basecorrector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA2246666D1000E8C7C /* basecorrector.cpp */; };
+		3902FFE2246666D1000E8C7C /* seprocessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA4246666D1000E8C7C /* seprocessor.cpp */; };
+		3902FFE3246666D1000E8C7C /* writerthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA5246666D1000E8C7C /* writerthread.cpp */; };
+		3902FFE4246666D1000E8C7C /* overlapanalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA7246666D1000E8C7C /* overlapanalysis.cpp */; };
+		3902FFE5246666D1000E8C7C /* adaptertrimmer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA8246666D1000E8C7C /* adaptertrimmer.cpp */; };
+		3902FFE6246666D1000E8C7C /* read.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFA9246666D1000E8C7C /* read.cpp */; };
+		3902FFE7246666D1000E8C7C /* processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFAD246666D1000E8C7C /* processor.cpp */; };
+		3902FFE8246666D1000E8C7C /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFAE246666D1000E8C7C /* stats.cpp */; };
+		3902FFE9246666D1000E8C7C /* htmlreporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFB3246666D1000E8C7C /* htmlreporter.cpp */; };
+		3902FFEA246666D1000E8C7C /* fastqreader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFB4246666D1000E8C7C /* fastqreader.cpp */; };
+		3902FFEB246666D1000E8C7C /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFB5246666D1000E8C7C /* options.cpp */; };
+		3902FFEC246666D1000E8C7C /* umiprocessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFB7246666D1000E8C7C /* umiprocessor.cpp */; };
+		3902FFED246666D1000E8C7C /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFB9246666D1000E8C7C /* filter.cpp */; };
+		3902FFEE246666D1000E8C7C /* evaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFC6246666D1000E8C7C /* evaluator.cpp */; };
+		3902FFEF246666D1000E8C7C /* fastareader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFC7246666D1000E8C7C /* fastareader.cpp */; };
+		3902FFF0246666D1000E8C7C /* sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFC8246666D1000E8C7C /* sequence.cpp */; };
+		3902FFF1246666D1000E8C7C /* filterresult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFC9246666D1000E8C7C /* filterresult.cpp */; };
+		3902FFF2246666D1000E8C7C /* duplicate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFCB246666D1000E8C7C /* duplicate.cpp */; };
+		3902FFF3246666D1000E8C7C /* nucleotidetree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFD2246666D1000E8C7C /* nucleotidetree.cpp */; };
+		3902FFF4246666D1000E8C7C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFD4246666D1000E8C7C /* main.cpp */; };
+		3902FFF5246666D1000E8C7C /* unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFD9246666D1000E8C7C /* unittest.cpp */; };
+		3902FFF6246666D1000E8C7C /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFDA246666D1000E8C7C /* writer.cpp */; };
+		3902FFF7246666D1000E8C7C /* polyx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFDD246666D1000E8C7C /* polyx.cpp */; };
+		3902FFF924666E1F000E8C7C /* test_readfastq_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3902FFF824666E1F000E8C7C /* test_readfastq_main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +50,75 @@
 
 /* Begin PBXFileReference section */
 		3902FF8E246664AD000E8C7C /* fastq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fastq; sourceTree = BUILT_PRODUCTS_DIR; };
-		3902FF91246664AD000E8C7C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3902FF9B246666D1000E8C7C /* writerthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writerthread.h; sourceTree = "<group>"; };
+		3902FF9C246666D1000E8C7C /* peprocessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = peprocessor.cpp; sourceTree = "<group>"; };
+		3902FF9D246666D1000E8C7C /* jsonreporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsonreporter.cpp; sourceTree = "<group>"; };
+		3902FF9E246666D1000E8C7C /* evaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluator.h; sourceTree = "<group>"; };
+		3902FF9F246666D1000E8C7C /* fastareader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastareader.h; sourceTree = "<group>"; };
+		3902FFA0246666D1000E8C7C /* seprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seprocessor.h; sourceTree = "<group>"; };
+		3902FFA1246666D1000E8C7C /* threadconfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threadconfig.cpp; sourceTree = "<group>"; };
+		3902FFA2246666D1000E8C7C /* basecorrector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basecorrector.cpp; sourceTree = "<group>"; };
+		3902FFA3246666D1000E8C7C /* processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processor.h; sourceTree = "<group>"; };
+		3902FFA4246666D1000E8C7C /* seprocessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = seprocessor.cpp; sourceTree = "<group>"; };
+		3902FFA5246666D1000E8C7C /* writerthread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writerthread.cpp; sourceTree = "<group>"; };
+		3902FFA6246666D1000E8C7C /* htmlreporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = htmlreporter.h; sourceTree = "<group>"; };
+		3902FFA7246666D1000E8C7C /* overlapanalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = overlapanalysis.cpp; sourceTree = "<group>"; };
+		3902FFA8246666D1000E8C7C /* adaptertrimmer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adaptertrimmer.cpp; sourceTree = "<group>"; };
+		3902FFA9246666D1000E8C7C /* read.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = read.cpp; sourceTree = "<group>"; };
+		3902FFAA246666D1000E8C7C /* basecorrector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basecorrector.h; sourceTree = "<group>"; };
+		3902FFAB246666D1000E8C7C /* threadconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threadconfig.h; sourceTree = "<group>"; };
+		3902FFAC246666D1000E8C7C /* nucleotidetree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nucleotidetree.h; sourceTree = "<group>"; };
+		3902FFAD246666D1000E8C7C /* processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processor.cpp; sourceTree = "<group>"; };
+		3902FFAE246666D1000E8C7C /* stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stats.cpp; sourceTree = "<group>"; };
+		3902FFAF246666D1000E8C7C /* cmdline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmdline.h; sourceTree = "<group>"; };
+		3902FFB0246666D1000E8C7C /* adaptertrimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adaptertrimmer.h; sourceTree = "<group>"; };
+		3902FFB1246666D1000E8C7C /* unittest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unittest.h; sourceTree = "<group>"; };
+		3902FFB2246666D1000E8C7C /* peprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = peprocessor.h; sourceTree = "<group>"; };
+		3902FFB3246666D1000E8C7C /* htmlreporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = htmlreporter.cpp; sourceTree = "<group>"; };
+		3902FFB4246666D1000E8C7C /* fastqreader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastqreader.cpp; sourceTree = "<group>"; };
+		3902FFB5246666D1000E8C7C /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		3902FFB6246666D1000E8C7C /* overlapanalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overlapanalysis.h; sourceTree = "<group>"; };
+		3902FFB7246666D1000E8C7C /* umiprocessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = umiprocessor.cpp; sourceTree = "<group>"; };
+		3902FFB8246666D1000E8C7C /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		3902FFB9246666D1000E8C7C /* filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filter.cpp; sourceTree = "<group>"; };
+		3902FFBB246666D1000E8C7C /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		3902FFBC246666D1000E8C7C /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		3902FFBD246666D1000E8C7C /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		3902FFBE246666D1000E8C7C /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		3902FFBF246666D1000E8C7C /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		3902FFC0246666D1000E8C7C /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		3902FFC1246666D1000E8C7C /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		3902FFC2246666D1000E8C7C /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		3902FFC3246666D1000E8C7C /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		3902FFC4246666D1000E8C7C /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		3902FFC5246666D1000E8C7C /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		3902FFC6246666D1000E8C7C /* evaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluator.cpp; sourceTree = "<group>"; };
+		3902FFC7246666D1000E8C7C /* fastareader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastareader.cpp; sourceTree = "<group>"; };
+		3902FFC8246666D1000E8C7C /* sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sequence.cpp; sourceTree = "<group>"; };
+		3902FFC9246666D1000E8C7C /* filterresult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filterresult.cpp; sourceTree = "<group>"; };
+		3902FFCA246666D1000E8C7C /* duplicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = duplicate.h; sourceTree = "<group>"; };
+		3902FFCB246666D1000E8C7C /* duplicate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = duplicate.cpp; sourceTree = "<group>"; };
+		3902FFCC246666D1000E8C7C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		3902FFCD246666D1000E8C7C /* sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sequence.h; sourceTree = "<group>"; };
+		3902FFCE246666D1000E8C7C /* umiprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = umiprocessor.h; sourceTree = "<group>"; };
+		3902FFCF246666D1000E8C7C /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		3902FFD0246666D1000E8C7C /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		3902FFD1246666D1000E8C7C /* read.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read.h; sourceTree = "<group>"; };
+		3902FFD2246666D1000E8C7C /* nucleotidetree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nucleotidetree.cpp; sourceTree = "<group>"; };
+		3902FFD3246666D1000E8C7C /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		3902FFD4246666D1000E8C7C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3902FFD5246666D1000E8C7C /* fastqreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastqreader.h; sourceTree = "<group>"; };
+		3902FFD6246666D1000E8C7C /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
+		3902FFD7246666D1000E8C7C /* filterresult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterresult.h; sourceTree = "<group>"; };
+		3902FFD8246666D1000E8C7C /* jsonreporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonreporter.h; sourceTree = "<group>"; };
+		3902FFD9246666D1000E8C7C /* unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unittest.cpp; sourceTree = "<group>"; };
+		3902FFDA246666D1000E8C7C /* writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writer.cpp; sourceTree = "<group>"; };
+		3902FFDB246666D1000E8C7C /* polyx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polyx.h; sourceTree = "<group>"; };
+		3902FFDC246666D1000E8C7C /* knownadapters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knownadapters.h; sourceTree = "<group>"; };
+		3902FFDD246666D1000E8C7C /* polyx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polyx.cpp; sourceTree = "<group>"; };
+		3902FFF824666E1F000E8C7C /* test_readfastq_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_readfastq_main.cpp; path = min_tests/test_readfastq_main.cpp; sourceTree = "<group>"; };
+		3902FFFA24666EBC000E8C7C /* R1.fq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = R1.fq; sourceTree = "<group>"; };
+		3902FFFB24666EBC000E8C7C /* R2.fq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = R2.fq; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +151,93 @@
 		3902FF90246664AD000E8C7C /* fastq */ = {
 			isa = PBXGroup;
 			children = (
-				3902FF91246664AD000E8C7C /* main.cpp */,
+				3902FFFA24666EBC000E8C7C /* R1.fq */,
+				3902FFFB24666EBC000E8C7C /* R2.fq */,
+				3902FF9A246666D1000E8C7C /* src */,
 			);
 			path = fastq;
+			sourceTree = "<group>";
+		};
+		3902FF9A246666D1000E8C7C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3902FFA8246666D1000E8C7C /* adaptertrimmer.cpp */,
+				3902FFB0246666D1000E8C7C /* adaptertrimmer.h */,
+				3902FFA2246666D1000E8C7C /* basecorrector.cpp */,
+				3902FFAA246666D1000E8C7C /* basecorrector.h */,
+				3902FFAF246666D1000E8C7C /* cmdline.h */,
+				3902FFCC246666D1000E8C7C /* common.h */,
+				3902FFCB246666D1000E8C7C /* duplicate.cpp */,
+				3902FFCA246666D1000E8C7C /* duplicate.h */,
+				3902FFC6246666D1000E8C7C /* evaluator.cpp */,
+				3902FF9E246666D1000E8C7C /* evaluator.h */,
+				3902FFC7246666D1000E8C7C /* fastareader.cpp */,
+				3902FF9F246666D1000E8C7C /* fastareader.h */,
+				3902FFB4246666D1000E8C7C /* fastqreader.cpp */,
+				3902FFD5246666D1000E8C7C /* fastqreader.h */,
+				3902FFB9246666D1000E8C7C /* filter.cpp */,
+				3902FFD3246666D1000E8C7C /* filter.h */,
+				3902FFC9246666D1000E8C7C /* filterresult.cpp */,
+				3902FFD7246666D1000E8C7C /* filterresult.h */,
+				3902FFB3246666D1000E8C7C /* htmlreporter.cpp */,
+				3902FFA6246666D1000E8C7C /* htmlreporter.h */,
+				3902FF9D246666D1000E8C7C /* jsonreporter.cpp */,
+				3902FFD8246666D1000E8C7C /* jsonreporter.h */,
+				3902FFDC246666D1000E8C7C /* knownadapters.h */,
+				3902FFD4246666D1000E8C7C /* main.cpp */,
+				3902FFD2246666D1000E8C7C /* nucleotidetree.cpp */,
+				3902FFAC246666D1000E8C7C /* nucleotidetree.h */,
+				3902FFB5246666D1000E8C7C /* options.cpp */,
+				3902FFB8246666D1000E8C7C /* options.h */,
+				3902FFA7246666D1000E8C7C /* overlapanalysis.cpp */,
+				3902FFB6246666D1000E8C7C /* overlapanalysis.h */,
+				3902FF9C246666D1000E8C7C /* peprocessor.cpp */,
+				3902FFB2246666D1000E8C7C /* peprocessor.h */,
+				3902FFDD246666D1000E8C7C /* polyx.cpp */,
+				3902FFDB246666D1000E8C7C /* polyx.h */,
+				3902FFAD246666D1000E8C7C /* processor.cpp */,
+				3902FFA3246666D1000E8C7C /* processor.h */,
+				3902FFA9246666D1000E8C7C /* read.cpp */,
+				3902FFD1246666D1000E8C7C /* read.h */,
+				3902FFA4246666D1000E8C7C /* seprocessor.cpp */,
+				3902FFA0246666D1000E8C7C /* seprocessor.h */,
+				3902FFC8246666D1000E8C7C /* sequence.cpp */,
+				3902FFCD246666D1000E8C7C /* sequence.h */,
+				3902FFAE246666D1000E8C7C /* stats.cpp */,
+				3902FFD6246666D1000E8C7C /* stats.h */,
+				3902FFF824666E1F000E8C7C /* test_readfastq_main.cpp */,
+				3902FFA1246666D1000E8C7C /* threadconfig.cpp */,
+				3902FFAB246666D1000E8C7C /* threadconfig.h */,
+				3902FFB7246666D1000E8C7C /* umiprocessor.cpp */,
+				3902FFCE246666D1000E8C7C /* umiprocessor.h */,
+				3902FFD9246666D1000E8C7C /* unittest.cpp */,
+				3902FFB1246666D1000E8C7C /* unittest.h */,
+				3902FFCF246666D1000E8C7C /* util.h */,
+				3902FFDA246666D1000E8C7C /* writer.cpp */,
+				3902FFD0246666D1000E8C7C /* writer.h */,
+				3902FFA5246666D1000E8C7C /* writerthread.cpp */,
+				3902FF9B246666D1000E8C7C /* writerthread.h */,
+				3902FFBA246666D1000E8C7C /* zlib */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		3902FFBA246666D1000E8C7C /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				3902FFBB246666D1000E8C7C /* zutil.h */,
+				3902FFBC246666D1000E8C7C /* inftrees.h */,
+				3902FFBD246666D1000E8C7C /* inffixed.h */,
+				3902FFBE246666D1000E8C7C /* trees.h */,
+				3902FFBF246666D1000E8C7C /* inffast.h */,
+				3902FFC0246666D1000E8C7C /* deflate.h */,
+				3902FFC1246666D1000E8C7C /* gzguts.h */,
+				3902FFC2246666D1000E8C7C /* zlib.h */,
+				3902FFC3246666D1000E8C7C /* inflate.h */,
+				3902FFC4246666D1000E8C7C /* crc32.h */,
+				3902FFC5246666D1000E8C7C /* zconf.h */,
+			);
+			path = zlib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +297,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3902FF92246664AD000E8C7C /* main.cpp in Sources */,
+				3902FFEF246666D1000E8C7C /* fastareader.cpp in Sources */,
+				3902FFE3246666D1000E8C7C /* writerthread.cpp in Sources */,
+				3902FFF2246666D1000E8C7C /* duplicate.cpp in Sources */,
+				3902FFF1246666D1000E8C7C /* filterresult.cpp in Sources */,
+				3902FFED246666D1000E8C7C /* filter.cpp in Sources */,
+				3902FFE9246666D1000E8C7C /* htmlreporter.cpp in Sources */,
+				3902FFE1246666D1000E8C7C /* basecorrector.cpp in Sources */,
+				3902FFF4246666D1000E8C7C /* main.cpp in Sources */,
+				3902FFF3246666D1000E8C7C /* nucleotidetree.cpp in Sources */,
+				3902FFE6246666D1000E8C7C /* read.cpp in Sources */,
+				3902FFDF246666D1000E8C7C /* jsonreporter.cpp in Sources */,
+				3902FFE7246666D1000E8C7C /* processor.cpp in Sources */,
+				3902FFE4246666D1000E8C7C /* overlapanalysis.cpp in Sources */,
+				3902FFF0246666D1000E8C7C /* sequence.cpp in Sources */,
+				3902FFE5246666D1000E8C7C /* adaptertrimmer.cpp in Sources */,
+				3902FFE0246666D1000E8C7C /* threadconfig.cpp in Sources */,
+				3902FFF924666E1F000E8C7C /* test_readfastq_main.cpp in Sources */,
+				3902FFE8246666D1000E8C7C /* stats.cpp in Sources */,
+				3902FFEE246666D1000E8C7C /* evaluator.cpp in Sources */,
+				3902FFDE246666D1000E8C7C /* peprocessor.cpp in Sources */,
+				3902FFE2246666D1000E8C7C /* seprocessor.cpp in Sources */,
+				3902FFF6246666D1000E8C7C /* writer.cpp in Sources */,
+				3902FFEB246666D1000E8C7C /* options.cpp in Sources */,
+				3902FFF7246666D1000E8C7C /* polyx.cpp in Sources */,
+				3902FFF5246666D1000E8C7C /* unittest.cpp in Sources */,
+				3902FFEA246666D1000E8C7C /* fastqreader.cpp in Sources */,
+				3902FFEC246666D1000E8C7C /* umiprocessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +445,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RZ48J8GLV;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lz",
+					"-lpthread",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +459,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RZ48J8GLV;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lz",
+					"-lpthread",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -265,7 +477,7 @@
 				3902FF94246664AD000E8C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3902FF95246664AD000E8C7C /* Build configuration list for PBXNativeTarget "fastq" */ = {
 			isa = XCConfigurationList;
@@ -274,7 +486,7 @@
 				3902FF97246664AD000E8C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
